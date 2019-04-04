@@ -37,9 +37,12 @@ public class ApiApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(MemberRepository memberRepository) {
 		return args -> {
-			memberRepository.save(new Member("이철수", "chulsoo", "test111"));
-			memberRepository.save(new Member("김정인", "jungin11", "test222"));
-			memberRepository.save(new Member("류정우", "jwryu991", "test333"));
+			memberRepository.save(new Member("강민수", "mskang7", "test111"));
+			memberRepository.save(new Member("윤태한", "yoongth", "test222"));
+			memberRepository.save(new Member("정은솔", "siri", "test333"));
+			memberRepository.save(new Member("류성호", "chris", "test444"));
+			memberRepository.save(new Member("테스트", "test", "test555"));
+
 		};
 	}
 
